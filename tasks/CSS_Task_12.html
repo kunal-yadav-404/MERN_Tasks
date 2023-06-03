@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      .icon {
+        margin: 0px 0px 0px 120px;
+      }
+      body {
+        background-color: #f1f1f1;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .input-group {
+        margin-bottom: 20px;
+      }
+
+      .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .input-group input[type="text"],
+      .input-group input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      .login-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .checkBoxN {
+        font-weight: bolder;
+        margin: 5px;
+      }
+
+      .remember-me {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .cancel-btn {
+        padding: 10px;
+        background-color: #f44336;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .forgot-password {
+        padding-top: 10px;
+        text-align: center;
+      }
+
+      .grey-box {
+        display: flex;
+        background-color: #ccc;
+        padding: 8px;
+        border-radius: 0px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon"><img src="icon.png" alt="" /></div>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter Username"
+        />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Password"
+        />
+      </div>
+      <button class="login-btn" type="submit">Login</button>
+      <div class="checkBoxN">
+        <input
+          type="checkbox"
+          id="remember-me"
+          name="remember-me"
+          class="remember-me"
+          checked
+        />
+        <label for="remember-me">Remember me</label>
+      </div>
+      <!-- <button class="cancel-btn" type="button">Cancel</button> -->
+      <div class="forgot-password">
+        <div class="grey-box">
+          <button class="cancel-btn" type="button">Cancel</button>
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
